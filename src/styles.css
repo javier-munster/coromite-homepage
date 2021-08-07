@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-primary {
+    background: #0585e1;
+    color: #FFFFFF;
+}
+
+.mat-accent {
+    background: #CBE432;
+    color: #FFFFFF;
+}
+
+.mat-warn {
+    background: #FD4D0C;
+    color: #FFFFFF;
+}
+
+.mat-secondary {
+    background: #090934;
+    color: #FFFFFF;
+}
+
+.mat-basic {
+    background: #F3F7D4;
+    color: #FFFFFF;
+}

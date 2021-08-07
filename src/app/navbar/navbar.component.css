@@ -1,0 +1,17 @@
+.nav-right {
+    margin-left: auto;
+}
+
+.mat-button.mat-primary {
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.mat-button.mat-primary:hover {
+    text-decoration: underline;
+}
+
+.mat-stroked-button.mat-primary:hover {
+    background: #FFFFFF;
+    color: #37a9fb;
+}
