@@ -3,6 +3,8 @@ import { BrowserModule } from "@angular/platform-browser";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatDividerModule } from "@angular/material/divider";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -28,7 +30,9 @@ import { FooterComponent } from "./footer/footer.component";
         NoopAnimationsModule,
         MatToolbarModule,
         MatButtonModule,
-        MatIconModule
+        MatIconModule,
+        FlexLayoutModule,
+        MatDividerModule
     ],
     providers: [],
     bootstrap: [AppComponent]
