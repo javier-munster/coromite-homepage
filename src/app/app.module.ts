@@ -5,6 +5,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatDividerModule } from "@angular/material/divider";
+import { MatCardModule } from "@angular/material/card";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -32,7 +33,8 @@ import { FooterComponent } from "./footer/footer.component";
         MatButtonModule,
         MatIconModule,
         FlexLayoutModule,
-        MatDividerModule
+        MatDividerModule,
+        MatCardModule
     ],
     providers: [],
     bootstrap: [AppComponent]
