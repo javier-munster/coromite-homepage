@@ -1,12 +1,19 @@
 .services-div {
-    background-color: #eee;
+    background-color: #eeeeee;
+    padding: 1rem;
 }
 
 .service-card {
     background-color: white;
+    text-align: center;
 }
 
 .card-button {
     background-color: #1976d2;
     color: white;
+}
+
+.card-text {
+    padding: 40px;
+    text-align: left;
 }
