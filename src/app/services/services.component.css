@@ -14,8 +14,12 @@
 }
 
 .card-text {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 60px;
     font-size: 21px;
     color: #6e7577;
+}
+
+.service-ul {
+    columns: 4;
 }
