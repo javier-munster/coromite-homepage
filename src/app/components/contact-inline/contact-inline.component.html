@@ -1,0 +1,8 @@
+<div fxFlex="column" class="contact-inline-div">
+    <h1>Contact us for a free consultation</h1>
+    <mat-form-field appearance="standard" color="primary">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="name@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+</div>

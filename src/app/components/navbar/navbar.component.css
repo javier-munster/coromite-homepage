@@ -1,0 +1,40 @@
+.nav-right {
+    margin-left: auto;
+}
+
+.mat-button {
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+}
+
+.mat-stroked-button {
+    font-weight: bold;
+    background-color: transparent;
+    color: #FFFFFF;
+    background: #37a9fb;
+}
+
+.mat-button:hover {
+    text-decoration: underline;
+}
+
+.mat-stroked-button:hover {
+    background: #FFFFFF;
+    color: #37a9fb;
+}
+
+.logo {
+    width: 50px;
+}
+
+.app-toolbar {
+    position: sticky;
+    position: -webkit-sticky;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}

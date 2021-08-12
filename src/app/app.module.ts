@@ -6,24 +6,31 @@ import { MatIconModule } from "@angular/material/icon";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatCardModule } from "@angular/material/card";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatInputModule } from "@angular/material/input";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
-import { NavbarComponent } from "./navbar/navbar.component";
-import { ServicesComponent } from "./services/services.component";
-import { AboutComponent } from "./about/about.component";
-import { HeroComponent } from "./hero/hero.component";
-import { FooterComponent } from "./footer/footer.component";
+import { NavbarComponent } from "./components/navbar/navbar.component";
+import { ServicesComponent } from "./components/services/services.component";
+import { AboutPageComponent } from "./pages/about-page/about-page.component";
+import { HeroComponent } from "./components/hero/hero.component";
+import { FooterComponent } from "./components/footer/footer.component";
+import { HomePageComponent } from "./pages/home-page/home-page.component";
+import { ContactInlineComponent } from "./components/contact-inline/contact-inline.component";
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
         ServicesComponent,
-        AboutComponent,
+        AboutPageComponent,
         HeroComponent,
-        FooterComponent
+        FooterComponent,
+        HomePageComponent,
+        ContactInlineComponent
     ],
     imports: [
         BrowserModule,
@@ -34,7 +41,11 @@ import { FooterComponent } from "./footer/footer.component";
         MatIconModule,
         FlexLayoutModule,
         MatDividerModule,
-        MatCardModule
+        MatCardModule,
+        MatFormFieldModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatInputModule
     ],
     providers: [],
     bootstrap: [AppComponent]
