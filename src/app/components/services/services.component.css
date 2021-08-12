@@ -9,8 +9,8 @@
 }
 
 .card-button {
-    background-color: #1976d2;
-    color: white;
+    background-color: #1976d2 !important;
+    color: white !important;
 }
 
 .card-text {
