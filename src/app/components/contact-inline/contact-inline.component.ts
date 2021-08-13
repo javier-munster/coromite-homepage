@@ -8,6 +8,9 @@ import { FormControl, Validators } from "@angular/forms";
 })
 export class ContactInlineComponent implements OnInit {
     email = new FormControl("", [ Validators.required, Validators.email ]);
+    firstName = new FormControl("", [ Validators.required ]);
+    lastName = new FormControl("", [ Validators.required ]);
+    message = new FormControl("", [ Validators.required ]);
 
     constructor() { }
 
@@ -15,10 +18,7 @@ export class ContactInlineComponent implements OnInit {
     }
 
     getErrorMessage() {
-        if (this.email.hasError("required")) {
-            return "You must enter a value";
-        }
-
+        return this.email.hasError("required") ? "You must enter a value" : "";
         return this.email.hasError("email") ? "Not a valid email" : "";
     }
 }

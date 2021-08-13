@@ -10,10 +10,11 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.mat-primary {
+
+/* .mat-primary {
     background: #0585e1;
     color: #FFFFFF;
-}
+} */
 
 .mat-accent {
     background: #CBE432;

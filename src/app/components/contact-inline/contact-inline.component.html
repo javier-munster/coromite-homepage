@@ -1,8 +1,26 @@
-<div fxFlex="column" class="contact-inline-div">
-    <h1>Contact us for a free consultation</h1>
-    <mat-form-field appearance="standard" color="primary">
-        <mat-label>Enter your email</mat-label>
-        <input matInput placeholder="name@example.com" [formControl]="email" required>
-        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-    </mat-form-field>
+<div fxLayout="column" class="contact-inline-div">
+    <h1 fxLayout="row">Contact us for a free consultation</h1>
+    <div fxLayout="row" fxLayoutGap="30px" fxFlex="100">
+        <mat-form-field fxFlex="50" class="mat-form-field" appearance="fill">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="John" [formControl]="firstName" required>
+        </mat-form-field>
+        <mat-form-field fxFlex="50" class="mat-form-field" appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Doe" [formControl]="lastName" required>
+        </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="30px" fxFlex="100">
+        <mat-form-field fxFlex="100" class="mat-form-field" appearance="fill">
+            <mat-label>Email address</mat-label>
+            <input matInput placeholder="john.doe@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="30px" fxFlex="100">
+        <mat-form-field fxFlex="100" class="mat-form-field" appearance="fill">
+            <mat-label>Message</mat-label>
+            <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="10" required [formControl]="message"></textarea>
+        </mat-form-field>
+    </div>
 </div>
