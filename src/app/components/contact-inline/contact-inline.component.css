@@ -4,3 +4,20 @@
     padding: 2rem;
     margin: 1rem;
 }
+
+.submit-button {
+    background-color: #1976d2;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #0d4072;
+}
+
+.submit-div {
+    align-self: center;
+}
+
+.error-msg {
+    align-self: center;
+}
