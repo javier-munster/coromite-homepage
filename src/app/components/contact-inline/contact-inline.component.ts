@@ -11,21 +11,20 @@ export class ContactInlineComponent implements OnInit {
     lastName = new FormControl("", [ Validators.required ]);
     email = new FormControl("", [ Validators.required, Validators.email ]);
     message = new FormControl("", [ Validators.nullValidator ]);
-    submitFailed = false;
+    isSubmitFail = false;
 
     constructor() { }
 
     ngOnInit(): void {
     }
 
-    getErrorMessage() {
-        // return this.email.hasError("required") ? "You must enter a value" : "";
-        return this.email.hasError("email") ? "Not a valid email" : "";
-    }
-
     submit() {
-        this.submitFailed = this.firstName.invalid || !!this.lastName.invalid || this.email.invalid || !!this.message.invalid;
+        this.isSubmitFail = this.firstName.invalid || !!this.lastName.invalid || this.email.invalid || !!this.message.invalid;
 
-        console.log("Contact us submit failed validation?", this.submitFailed);
+        console.log("Contact us submit failed validation?", this.isSubmitFail);
+
+        if (this.isSubmitFail) {
+            return;
+        }
     }
 }
