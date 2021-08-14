@@ -3,22 +3,22 @@
         <div fxLayout="row">
             <div fxFlex="50">
                 <div fxLayout="row">
-                    <a mat-button routerLink="/" tabindex="0" href="/">Home</a>
+                    <a mat-button routerLink="/" (click)="scrollToTop()" tabindex="0">Home</a>
                 </div>
                 <div fxLayout="row">
-                    <a mat-button routerLink="/" tabindex="1" href="/">Services</a>
+                    <a mat-button routerLink="/" fragment="services" tabindex="1">Services</a>
                 </div>
                 <div fxLayout="row">
                     <a mat-button routerLink="/about" tabindex="2" href="/about">About Us</a>
                 </div>
                 <div fxLayout="row">
-                    <a mat-button routerLink="/" tabindex="3" href="/">Blog</a>
+                    <a mat-button routerLink="/blog" tabindex="3" href="/">Blog</a>
                 </div>
             </div>
             <div fxFlex="50">
                 <h1>We are available 24/7</h1>
                 <p>info@coromite.com</p>
-                <a mat-stroked-button routerLink="/" tabindex="4" href="/" color="primary">Contact Us</a>
+                <a mat-stroked-button routerLink="/" fragment="contact" tabindex="4" color="primary">Contact Us</a>
             </div>
         </div>
         <div class="divider">

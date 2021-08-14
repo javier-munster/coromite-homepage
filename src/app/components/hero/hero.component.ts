@@ -1,3 +1,4 @@
+import { ViewportScroller } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 @Component({
     selector: "app-hero",
@@ -6,9 +7,12 @@ import { Component, OnInit } from "@angular/core";
 })
 export class HeroComponent implements OnInit {
 
-    constructor() { }
+    constructor(private viewportScroller: ViewportScroller) { }
 
     ngOnInit(): void {
     }
 
+    scrollToServices(): void {
+        this.viewportScroller.scrollToAnchor("services");
+    }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { ViewportScroller } from "@angular/common";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
     selector: "app-home-page",
@@ -11,5 +13,6 @@ export class HomePageComponent implements OnInit {
 
     ngOnInit(): void {
     }
+
 
 }
