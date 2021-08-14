@@ -35,6 +35,7 @@
 
 .mat-stroked-button {
     background: transparent;
+    border-color: white;
 }
 
 .mat-stroked-button:hover {
