@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl, Validators } from "@angular/forms";
+import { ContactService } from "src/app/services/contact.service";
 
 @Component({
     selector: "app-contact-inline",
@@ -13,18 +14,33 @@ export class ContactInlineComponent implements OnInit {
     message = new FormControl("", [ Validators.nullValidator ]);
     isSubmitFail = false;
 
-    constructor() { }
+    constructor(private contactService: ContactService) { }
 
     ngOnInit(): void {
     }
 
-    submit() {
+    isValid(): boolean {
         this.isSubmitFail = this.firstName.invalid || !!this.lastName.invalid || this.email.invalid || !!this.message.invalid;
 
         console.log("Contact us submit failed validation?", this.isSubmitFail);
 
-        if (this.isSubmitFail) {
+        return this.isSubmitFail;
+    }
+
+    submit() {
+        if (!this.isValid()) {
             return;
         }
+
+        this.contactService.postMessage({
+            firstName: this.firstName.value,
+            lastName: this.lastName.value,
+            email: this.email.value.toLowerCase(),
+            message: this.message.value
+        }).subscribe((res) => {
+            console.log("Message sent successfully", res);
+        }, (err) => {
+            console.error("Message failed to send:", err);
+        });
     }
 }
