@@ -1,0 +1,37 @@
+h1 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.mat-card {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.mat-card .mat-card-avatar {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.mat-card .mat-card-title {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.mat-card .mat-card-subtitle {
+    font-size: 17px;
+}
+
+.mat-card .body-content {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.founders-div {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}

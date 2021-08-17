@@ -21,6 +21,8 @@ import { HeroComponent } from "./components/hero/hero.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HomePageComponent } from "./pages/home-page/home-page.component";
 import { ContactInlineComponent } from "./components/contact-inline/contact-inline.component";
+import { MembersComponent } from "./components/members/members.component";
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
     declarations: [
@@ -31,7 +33,9 @@ import { ContactInlineComponent } from "./components/contact-inline/contact-inli
         HeroComponent,
         FooterComponent,
         HomePageComponent,
-        ContactInlineComponent
+        ContactInlineComponent,
+        MembersComponent,
+        AboutUsComponent
     ],
     imports: [
         BrowserModule,

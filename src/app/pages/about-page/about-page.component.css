@@ -1,0 +1,52 @@
+p {
+    font-size: 17px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.standard-img {
+    height: 500px;
+    width: 100%;
+    background: center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.standard-title-div {
+    color: #FFFFFF;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.standard-img h1 {
+    font-size: 3rem;
+    line-height: 3.125rem;
+    letter-spacing: normal;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+.standard-img h2 {
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.color_teal {
+    color: rgb(12, 221, 232);
+}
+
+.color_green {
+    color: #4BB79B;
+}
