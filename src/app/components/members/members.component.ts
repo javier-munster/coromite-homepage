@@ -18,7 +18,7 @@ export class MembersComponent implements OnInit {
                 thing: "Book",
                 info: "Man's Search for Meaning by Viktor Frankl"
             },
-            fact: "Published a paper in the Distributed Event-Based Systems conference. Went to New Zealand to present my work."
+            fact: "Been running Dungeons & Dragons games on a semi-regular basis for the past 15 years."
         },
         {
             img: "assets/roach.jpeg",
