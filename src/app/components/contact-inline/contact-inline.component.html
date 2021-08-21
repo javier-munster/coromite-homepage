@@ -1,6 +1,6 @@
 <div id="contact" fxLayout="column" class="contact-inline-div">
     <h1 fxLayout="row">Contact us for a free consultation</h1>
-    <div fxLayout="row" fxLayoutGap="30px" fxFlex="100">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px" fxLayoutGap.xs="0" fxFlex="100">
         <mat-form-field fxFlex="50" class="mat-form-field" appearance="fill">
             <mat-label>First Name</mat-label>
             <input matInput placeholder="John" [formControl]="firstName" required>
@@ -10,19 +10,15 @@
             <input matInput placeholder="Doe" [formControl]="lastName" required>
         </mat-form-field>
     </div>
-    <div fxLayout="row" fxLayoutGap="30px" fxFlex="100">
-        <mat-form-field fxFlex="100" class="mat-form-field" appearance="fill">
-            <mat-label>Email address</mat-label>
-            <input matInput placeholder="john.doe@example.com" [formControl]="email" required>
-            <mat-error *ngIf="email.invalid && this.email.hasError('email')">Not a valid email</mat-error>
-        </mat-form-field>
-    </div>
-    <div fxLayout="row" fxLayoutGap="30px" fxFlex="100">
-        <mat-form-field fxFlex="100" class="mat-form-field" appearance="fill">
-            <mat-label>Message</mat-label>
-            <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="10" [formControl]="message"></textarea>
-        </mat-form-field>
-    </div>
+    <mat-form-field fxFlex="100" class="mat-form-field" appearance="fill">
+        <mat-label>Email address</mat-label>
+        <input matInput placeholder="john.doe@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid && this.email.hasError('email')">Not a valid email</mat-error>
+    </mat-form-field>
+    <mat-form-field fxFlex="100" class="mat-form-field" appearance="fill">
+        <mat-label>Message</mat-label>
+        <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="10" [formControl]="message"></textarea>
+    </mat-form-field>
     <mat-error class="error-msg" *ngIf="isSubmitFail">Please complete all required fields</mat-error>
     <div class="submit-div" fxLayout="column">
         <button mat-raised-button (click)="submit()" class="submit-button">Submit</button>

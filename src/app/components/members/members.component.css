@@ -20,6 +20,7 @@ h1 {
 .mat-card .mat-card-title {
     font-weight: 400;
     font-size: 30px;
+    line-height: normal;
 }
 
 .mat-card .mat-card-subtitle {
