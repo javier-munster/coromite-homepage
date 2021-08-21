@@ -10,6 +10,8 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatInputModule } from "@angular/material/input";
 import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -22,7 +24,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { HomePageComponent } from "./pages/home-page/home-page.component";
 import { ContactInlineComponent } from "./components/contact-inline/contact-inline.component";
 import { MembersComponent } from "./components/members/members.component";
-import { AboutUsComponent } from './components/about-us/about-us.component';
+import { AboutUsComponent } from "./components/about-us/about-us.component";
 
 @NgModule({
     declarations: [
@@ -51,7 +53,9 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
         FormsModule,
         ReactiveFormsModule,
         MatInputModule,
-        HttpClientModule
+        HttpClientModule,
+        BrowserAnimationsModule,
+        MatProgressSpinnerModule
     ],
     providers: [],
     bootstrap: [AppComponent]

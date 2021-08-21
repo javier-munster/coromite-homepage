@@ -6,6 +6,7 @@
 .submit-button {
     background-color: #1976d2;
     color: white;
+    width: 80px;
 }
 
 .submit-button:hover {
@@ -18,4 +19,20 @@
 
 .error-msg {
     align-self: center;
+}
+
+:host ::ng-deep .custom-spinner circle {
+    stroke: white;
+}
+
+.error-button {
+    background-color: red;
+    color: white;
+    width: 80px;
+}
+
+.success-button {
+    background-color: green;
+    color: white;
+    width: 80px;
 }
