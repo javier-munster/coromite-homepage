@@ -19,11 +19,6 @@ h1 {
 .standard-title-div {
     color: #FFFFFF;
     height: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .standard-img h1 {

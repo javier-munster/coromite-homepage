@@ -1,20 +1,15 @@
 .hero-img {
-    height: 100%;
-    width: 100%;
+    min-height: calc(100vh - 64px);
+    max-width: 100%;
     background: center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    margin-top: 64px;
+    padding-top: 64px;
 }
 
 .hero-title-div {
     color: #FFFFFF;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero-title {
@@ -37,6 +32,4 @@
 .mat-mini-fab {
     border: 1px solid white;
     background: transparent !important;
-    display: flex;
-    justify-content: center;
 }

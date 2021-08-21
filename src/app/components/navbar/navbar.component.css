@@ -30,8 +30,7 @@
 }
 
 .app-toolbar {
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     left: 0;
     width: 100%;
     top: 0;
@@ -46,4 +45,8 @@
 
 .logo-div {
     cursor: pointer;
+}
+
+.space {
+    height: 64px;
 }
