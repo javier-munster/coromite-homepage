@@ -37,6 +37,7 @@
     z-index: 1000;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #FFFFFF;
+    height: 64px;
 }
 
 .mat-form-field {
