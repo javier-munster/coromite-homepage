@@ -1,7 +1,9 @@
 <mat-toolbar class="app-toolbar">
-    <mat-toolbar-row>
-        <img class="logo" src="assets/logo.webp">
-        <h1>Coromite Labs</h1>
+    <mat-toolbar-row fxLayout="row">
+        <div mat-button fxLayoutAlign="center center" routerLink="/" (click)="scrollToTop()" class="logo-div">
+            <img class="logo" src="assets/logo.webp">
+            <h1>Coromite Labs</h1>
+        </div>
         <span class="menu-spacer"></span>
         <div class="nav-right">
             <a mat-button routerLink="/" tabindex="0" fragment="services">Services</a>

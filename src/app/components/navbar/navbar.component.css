@@ -43,3 +43,7 @@
 .mat-form-field {
     background: #FFFFFF !important
 }
+
+.logo-div {
+    cursor: pointer;
+}
