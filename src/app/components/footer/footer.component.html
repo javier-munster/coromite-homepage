@@ -1,32 +1,30 @@
 <div class="footer">
-    <div class="footer-margin">
-        <div fxLayout="row">
-            <div fxFlex="50">
-                <div fxLayout="row">
+    <div fxLayout="row">
+        <div fxFlex="20" fxFlex.lt-xl="10"></div>
+        <div fxLayout="column" fxFlex="60" fxFlex.lt-xl="80">
+            <div fxLayout="row" fxLayout.lt-sm="column">
+                <div fxFlex="50" fxLayout="column">
                     <a mat-button routerLink="/" (click)="scrollToTop()" tabindex="0">Home</a>
-                </div>
-                <div fxLayout="row">
                     <a mat-button routerLink="/" fragment="services" tabindex="1">Services</a>
-                </div>
-                <div fxLayout="row">
                     <a mat-button routerLink="/about" tabindex="2" href="/about">About Us</a>
+                    <!-- <a mat-button routerLink="/blog" tabindex="3" href="/">Blog</a> -->
                 </div>
-                <!-- <div fxLayout="row">
-                    <a mat-button routerLink="/blog" tabindex="3" href="/">Blog</a>
-                </div> -->
+                <div fxFlex="50" fxLayout="column">
+                    <h1>We'd love to hear from you</h1>
+                    <p>Toronto, Ontario</p>
+                    <p>contact@coromite.com</p>
+                    <div>
+                        <a mat-stroked-button routerLink="/" fragment="contact" tabindex="4">Contact Us</a>
+                    </div>
+                </div>
             </div>
-            <div fxFlex="50">
-                <h1>We'd love to hear from you</h1>
-                <p>Toronto, Ontario</p>
-                <p>contact@coromite.com</p>
-                <a mat-stroked-button routerLink="/" fragment="contact" tabindex="4">Contact Us</a>
+            <div class="divider">
+                <mat-divider></mat-divider>
+            </div>
+            <div class="copyright">
+                <p>© 2021 Coromite Labs Inc. All rights reserved.</p>
             </div>
         </div>
-        <div class="divider">
-            <mat-divider></mat-divider>
-        </div>
-        <div class="copyright">
-            <p>© 2021 Coromite Labs Inc. All rights reserved.</p>
-        </div>
+        <div fxFlex="20" fxFlex.lt-xl="10"></div>
     </div>
 </div>
