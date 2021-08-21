@@ -13,10 +13,11 @@
 }
 
 .divider {
-    margin-top: 100px;
+    margin-top: 3rem;
     margin-bottom: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: white;
 }
 
 .copyright {
