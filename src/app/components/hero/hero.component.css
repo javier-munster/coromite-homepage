@@ -1,7 +1,7 @@
 .hero-img {
     min-height: calc(100vh - 64px);
     max-width: 100%;
-    background: center center fixed;
+    background: center -100px fixed;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 64px;

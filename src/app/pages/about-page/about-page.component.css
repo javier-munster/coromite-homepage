@@ -10,7 +10,7 @@ h1 {
 .standard-img {
     height: 500px;
     width: 100%;
-    background: center center fixed;
+    background: center -100px fixed;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
