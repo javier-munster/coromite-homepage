@@ -2,14 +2,23 @@
     <div fxLayout="row">
         <div fxFlex="20" fxFlex.lt-xl="10"></div>
         <div fxLayout="column" fxFlex="60" fxFlex.lt-xl="80">
-            <div fxLayout="row" fxLayout.lt-sm="column">
-                <div fxFlex="50" fxLayout="column">
-                    <a mat-button routerLink="/" (click)="scrollToTop()" tabindex="0">Home</a>
-                    <a mat-button routerLink="/" fragment="services" tabindex="1">Services</a>
-                    <a mat-button routerLink="/about" tabindex="2" href="/about">About Us</a>
-                    <!-- <a mat-button routerLink="/blog" tabindex="3" href="/">Blog</a> -->
+            <div fxLayout="row" fxLayout.xs="column">
+                <div fxFlex="25" fxFlex.sm="15" fxFlex.xs="0"></div>
+                <div fxFlex="25" fxFlex.xs="50" fxLayout="column">
+                    <div>
+                        <a mat-button routerLink="/" (click)="scrollToTop()" tabindex="0">Home</a>
+                    </div>
+                    <div>
+                        <a mat-button routerLink="/" fragment="services" tabindex="1">Services</a>
+                    </div>
+                    <div>
+                        <a mat-button routerLink="/about" tabindex="2" href="/about">About Us</a>
+                    </div>
+                    <div>
+                        <!-- <a mat-button routerLink="/blog" tabindex="3" href="/">Blog</a> -->
+                    </div>
                 </div>
-                <div fxFlex="50" fxLayout="column">
+                <div fxFlex="50" fxFlex.sm="60" fxFlex.xs="50" fxLayout="column">
                     <h1>We'd love to hear from you</h1>
                     <p>Toronto, Ontario</p>
                     <p>contact@coromite.com</p>
