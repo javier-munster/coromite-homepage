@@ -6,7 +6,7 @@ import { ContactUsForm } from "../models/contact-us-form";
     providedIn: "root"
 })
 export class ContactService {
-    private readonly COROMITE_EMAIL_ENDPOINT = "https://www.coromite.com/test";
+    private readonly COROMITE_EMAIL_ENDPOINT = "https://www.coromite.com/contact-us";
 
     constructor(private http: HttpClient) { }
 
