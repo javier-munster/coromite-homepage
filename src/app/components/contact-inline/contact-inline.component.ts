@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl, Validators } from "@angular/forms";
+import { GoogleAnalyticsService } from "ngx-google-analytics";
 import { ContactService } from "src/app/services/contact.service";
 
 enum SubmitState {
@@ -21,7 +22,7 @@ export class ContactInlineComponent implements OnInit {
     isSubmitValidationFail = false;
     submitState: SubmitState = SubmitState.initial;
 
-    constructor(private contactService: ContactService) { }
+    constructor(private contactService: ContactService, private gaService: GoogleAnalyticsService) { }
 
     ngOnInit(): void {
     }
@@ -35,6 +36,7 @@ export class ContactInlineComponent implements OnInit {
     }
 
     submit() {
+        this.gaService.event("submit", "contact-us", this.submitState);
         if (this.submitState === SubmitState.submitting) {
             return;
         }
@@ -54,9 +56,12 @@ export class ContactInlineComponent implements OnInit {
         }).subscribe((res) => {
             this.submitState = SubmitState.success;
             console.log("Message sent successfully", res);
+            this.gaService.event("submit", "contact-us", "SUCCESS");
+
         }, (err) => {
             this.submitState = SubmitState.error;
             console.error("Message failed to send:", err);
+            this.gaService.event("submit", "contact-us", "FAIL");
         });
     }
 }
