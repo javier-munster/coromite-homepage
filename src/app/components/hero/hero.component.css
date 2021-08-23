@@ -8,6 +8,15 @@
     padding-top: 56px;
 }
 
+.lt-md-size {
+    background-position: center center !important;
+    min-height: calc(100vh - 56px);
+}
+
+.gt-sm-szie {
+    background: center -100px !important;
+}
+
 .hero-title-div {
     color: #FFFFFF;
     text-align: center;
@@ -31,9 +40,9 @@
 }
 
 .hero-subtitle {
-    font-weight: 900;
     padding: 0;
     margin: 0;
+    font-weight: 900;
 }
 
 .hero-subtitle-large {

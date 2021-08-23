@@ -4,7 +4,16 @@ p {
 
 h1 {
     font-weight: 300;
-    font-size: 30px;
+}
+
+.small-h1 {
+    font-size: 25px;
+    line-height: 26px;
+}
+
+.large-h1 {
+    font-size: 3rem;
+    line-height: 3.125rem;
 }
 
 .standard-img {
@@ -16,6 +25,10 @@ h1 {
     overflow: hidden;
 }
 
+.lt-md-size {
+    background-position: center center fixed !important;
+}
+
 .standard-title-div {
     color: #FFFFFF;
     height: 100%;
@@ -23,8 +36,6 @@ h1 {
 }
 
 .standard-img h1 {
-    font-size: 3rem;
-    line-height: 3.125rem;
     letter-spacing: normal;
     font-weight: 300;
     padding: 0;
@@ -32,11 +43,19 @@ h1 {
 }
 
 .standard-img h2 {
-    font-size: 4rem;
-    line-height: 6rem;
     font-weight: 900;
     padding: 0;
     margin: 0;
+}
+
+.small-h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.large-h2 {
+    font-size: 4rem;
+    line-height: 6rem;
 }
 
 .color_teal {
