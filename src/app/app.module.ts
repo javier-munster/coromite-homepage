@@ -12,14 +12,13 @@ import { MatInputModule } from "@angular/material/input";
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
-import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from 'ngx-google-analytics';
+import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from "ngx-google-analytics";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { ServicesComponent } from "./components/services/services.component";
-import { AboutPageComponent } from "./pages/about-page/about-page.component";
 import { HeroComponent } from "./components/hero/hero.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HomePageComponent } from "./pages/home-page/home-page.component";
@@ -32,7 +31,6 @@ import { AboutUsComponent } from "./components/about-us/about-us.component";
         AppComponent,
         NavbarComponent,
         ServicesComponent,
-        AboutPageComponent,
         HeroComponent,
         FooterComponent,
         HomePageComponent,

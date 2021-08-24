@@ -1,17 +1,19 @@
-<div class="founders-div" fxLayout="column">
-    <h1>Founders</h1>
-    <div fxLayout="row" fxLayoutGap="30px" fxLayout.lt-lg="column">
-        <mat-card fxFlex="{{Math.floor(100 / founders.length)}}" *ngFor="let founder of founders">
-            <mat-card-content>
-                <img mat-card-avatar src="{{founder.img}}">
-                <mat-card-title>{{founder.name}}</mat-card-title>
-                <mat-card-subtitle>{{founder.subtitle}}</mat-card-subtitle>
-                <div class="body-content">
-                    <p>{{founder.body}}</p>
-                    <p><strong>Fun Fact:</strong> {{founder.fact}}</p>
-                    <p><strong>Favourite {{founder.favourite.thing}}:</strong> {{founder.favourite.info}}</p>
-                </div>
-            </mat-card-content>
-        </mat-card>
+<div id="about">
+    <div class="founders-div" fxLayout="column">
+        <h1>Founders</h1>
+        <div fxLayout="row" fxLayoutGap="30px" fxLayout.lt-lg="column">
+            <mat-card fxFlex="{{Math.floor(100 / founders.length)}}" *ngFor="let founder of founders">
+                <mat-card-content>
+                    <img mat-card-avatar src="{{founder.img}}">
+                    <mat-card-title>{{founder.name}}</mat-card-title>
+                    <mat-card-subtitle>{{founder.subtitle}}</mat-card-subtitle>
+                    <div class="body-content">
+                        <p>{{founder.body}}</p>
+                        <p><strong>Fun Fact:</strong> {{founder.fact}}</p>
+                        <p><strong>Favourite {{founder.favourite.thing}}:</strong> {{founder.favourite.info}}</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
     </div>
 </div>

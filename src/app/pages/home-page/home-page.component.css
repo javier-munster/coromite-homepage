@@ -1,0 +1,67 @@
+p {
+    font-size: 17px;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+.small-h1 {
+    font-size: 25px;
+    line-height: 26px;
+}
+
+.large-h1 {
+    font-size: 3rem;
+    line-height: 3.125rem;
+}
+
+.standard-img {
+    height: 500px;
+    width: 100%;
+    background: center -100px fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.lt-md-size {
+    background-position: center center fixed !important;
+}
+
+.standard-title-div {
+    color: #FFFFFF;
+    height: 100%;
+    text-align: center;
+}
+
+.standard-img h1 {
+    letter-spacing: normal;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+.standard-img h2 {
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.small-h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.large-h2 {
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+.color_teal {
+    color: rgb(12, 221, 232);
+}
+
+.color_green {
+    color: #4BB79B;
+}
