@@ -19,7 +19,7 @@
         <mat-label>Message</mat-label>
         <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="10" [formControl]="message"></textarea>
     </mat-form-field>
-    <mat-error class="error-msg" *ngIf="isSubmitValidationFail">Please complete all required fields</mat-error>
+    <mat-error class="error-msg" *ngIf="!isSubmitValidationSuccess">Please complete all required fields</mat-error>
     <div class="submit-div" fxLayoutAlign="center center">
         <button mat-raised-button (click)="submit()" class="submit-button" *ngIf="submitState === 'initial'">Submit</button>
         <button mat-raised-button (click)="submit()" class="submit-button" *ngIf="submitState === 'submitting'" fxLayoutAlign="center center">

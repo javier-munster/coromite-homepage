@@ -19,7 +19,7 @@ export class ContactInlineComponent implements OnInit {
     lastName = new FormControl("", [ Validators.required ]);
     email = new FormControl("", [ Validators.required, Validators.email ]);
     message = new FormControl("", [ Validators.nullValidator ]);
-    isSubmitValidationFail = false;
+    isSubmitValidationSuccess = true;
     submitState: SubmitState = SubmitState.initial;
 
     constructor(private contactService: ContactService, private gaService: GoogleAnalyticsService) { }
@@ -28,11 +28,11 @@ export class ContactInlineComponent implements OnInit {
     }
 
     isValid(): boolean {
-        this.isSubmitValidationFail = this.firstName.invalid || !!this.lastName.invalid || this.email.invalid || !!this.message.invalid;
+        this.isSubmitValidationSuccess = !(this.firstName.invalid || !!this.lastName.invalid || this.email.invalid || !!this.message.invalid);
 
-        console.log("Contact us submit failed validation?", this.isSubmitValidationFail);
+        console.log("Contact us submit failed validation?", this.isSubmitValidationSuccess);
 
-        return this.isSubmitValidationFail;
+        return this.isSubmitValidationSuccess;
     }
 
     submit() {
@@ -41,7 +41,7 @@ export class ContactInlineComponent implements OnInit {
             return;
         }
 
-        if (this.isValid()) {
+        if (!this.isValid()) {
             return;
         }
 
