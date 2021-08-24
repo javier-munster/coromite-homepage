@@ -7,8 +7,8 @@
         <span class="menu-spacer"></span>
         <div class="nav-right">
             <a mat-button routerLink="/" tabindex="0" (click)="scrollToTop()" fxHide.xs>Home</a>
-            <a mat-button routerLink="/" tabindex="1" fragment="services" (click)="navigateTo('services')">Services</a>
-            <a mat-button routerLink="/about" tabindex="2" href="/about" (click)="navigateTo('about')">About Us</a>
+            <a mat-button routerLink="/" tabindex="1" fragment="services" (click)="navigateTo('services')" fxHide.xs>Services</a>
+            <a mat-button routerLink="/about" tabindex="2" href="/about" (click)="navigateTo('about')" fxHide.xs>About Us</a>
             <!-- <a mat-button routerLink="/blog" tabindex="3" href="/">Blog</a> -->
             <a mat-stroked-button routerLink="/" tabindex="4" fragment="contact" (click)="navigateTo('contact')">Contact Us</a>
         </div>
