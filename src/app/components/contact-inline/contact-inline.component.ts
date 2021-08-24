@@ -41,13 +41,12 @@ export class ContactInlineComponent implements OnInit {
             return;
         }
 
-        if (!this.isValid()) {
+        if (this.isValid()) {
             return;
         }
 
-        this.isSubmitValidationFail = false;
         this.submitState = SubmitState.submitting;
-
+        console.log("Submitting message");
         this.contactService.postMessage({
             firstName: this.firstName.value,
             lastName: this.lastName.value,
