@@ -1,32 +1,34 @@
-<div id="contact" fxLayout="column" class="contact-inline-div">
-    <h1 fxLayout="row">Contact us for a free consultation</h1>
-    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px" fxLayoutGap.xs="0" fxFlex="100">
-        <mat-form-field fxFlex="50" class="mat-form-field" appearance="fill">
-            <mat-label>First Name</mat-label>
-            <input matInput placeholder="John" [formControl]="firstName" required>
+<div id="contact">
+    <div fxLayout="column" class="contact-inline-div">
+        <h1 fxLayout="row">Contact us for a free consultation</h1>
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px" fxLayoutGap.xs="0" fxFlex="100">
+            <mat-form-field fxFlex="50" class="mat-form-field" appearance="fill">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="John" [formControl]="firstName" required>
+            </mat-form-field>
+            <mat-form-field fxFlex="50" class="mat-form-field" appearance="fill">
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Doe" [formControl]="lastName" required>
+            </mat-form-field>
+        </div>
+        <mat-form-field fxFlex="100" class="mat-form-field" appearance="fill">
+            <mat-label>Email address</mat-label>
+            <input matInput placeholder="john.doe@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid && this.email.hasError('email')">Not a valid email</mat-error>
         </mat-form-field>
-        <mat-form-field fxFlex="50" class="mat-form-field" appearance="fill">
-            <mat-label>Last Name</mat-label>
-            <input matInput placeholder="Doe" [formControl]="lastName" required>
+        <mat-form-field fxFlex="100" class="mat-form-field" appearance="fill">
+            <mat-label>Message</mat-label>
+            <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="10" [formControl]="message"></textarea>
         </mat-form-field>
-    </div>
-    <mat-form-field fxFlex="100" class="mat-form-field" appearance="fill">
-        <mat-label>Email address</mat-label>
-        <input matInput placeholder="john.doe@example.com" [formControl]="email" required>
-        <mat-error *ngIf="email.invalid && this.email.hasError('email')">Not a valid email</mat-error>
-    </mat-form-field>
-    <mat-form-field fxFlex="100" class="mat-form-field" appearance="fill">
-        <mat-label>Message</mat-label>
-        <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5" cdkAutosizeMaxRows="10" [formControl]="message"></textarea>
-    </mat-form-field>
-    <mat-error class="error-msg" *ngIf="!isSubmitValidationSuccess">Please complete all required fields</mat-error>
-    <div class="submit-div" fxLayoutAlign="center center">
-        <button mat-raised-button (click)="submit()" class="submit-button" *ngIf="submitState === 'initial'">Submit</button>
-        <button mat-raised-button (click)="submit()" class="submit-button" *ngIf="submitState === 'submitting'" fxLayoutAlign="center center">
-            <mat-progress-spinner class="custom-spinner" mode="indeterminate" diameter="36"></mat-progress-spinner>
-        </button>
-        <button mat-raised-button (click)="submit()" class="error-button" *ngIf="submitState === 'error'">Error</button>
-        <button mat-raised-button (click)="submit()" class="success-button" *ngIf="submitState === 'success'"><mat-icon>done</mat-icon></button>
-    </div>
+        <mat-error class="error-msg" *ngIf="!isSubmitValidationSuccess">Please complete all required fields</mat-error>
+        <div class="submit-div" fxLayoutAlign="center center">
+            <button mat-raised-button (click)="submit()" class="submit-button" *ngIf="submitState === 'initial'">Submit</button>
+            <button mat-raised-button (click)="submit()" class="submit-button" *ngIf="submitState === 'submitting'" fxLayoutAlign="center center">
+                <mat-progress-spinner class="custom-spinner" mode="indeterminate" diameter="36"></mat-progress-spinner>
+            </button>
+            <button mat-raised-button (click)="submit()" class="error-button" *ngIf="submitState === 'error'">Error</button>
+            <button mat-raised-button (click)="submit()" class="success-button" *ngIf="submitState === 'success'"><mat-icon>done</mat-icon></button>
+        </div>
 
+    </div>
 </div>
