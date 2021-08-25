@@ -28,7 +28,7 @@ export class ContactInlineComponent implements OnInit {
     }
 
     isValid(): boolean {
-        this.isSubmitValidationSuccess = this.firstName.invalid || this.lastName.invalid || this.email.invalid || this.message.invalid;
+        this.isSubmitValidationSuccess = !this.firstName.invalid && !this.lastName.invalid && !this.email.invalid && !this.message.invalid;
 
         console.log("Contact us submit failed validation?", this.isSubmitValidationSuccess);
 
