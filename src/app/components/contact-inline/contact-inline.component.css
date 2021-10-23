@@ -36,3 +36,8 @@
     color: white;
     width: 80px;
 }
+
+.large-margin {
+    margin-left: 500px;
+    margin-right: 500px;
+}

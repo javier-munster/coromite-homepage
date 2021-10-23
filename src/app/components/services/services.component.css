@@ -1,6 +1,9 @@
 .services-div {
     background-color: #eeeeee;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .service-card {
@@ -38,13 +41,11 @@
     color: #1976d2;
 }
 
-.mat-icon.deploy {
+.mat-icon.design {
     color: #4BB79B;
 }
 
-.cogs {
-    width: 75px;
-    height: 75px;
+.mat-icon.seo {
     color: #088a91;
 }
 
