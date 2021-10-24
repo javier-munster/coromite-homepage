@@ -27,6 +27,7 @@ h1 {
 
 .lt-md-size {
     background-position: center center fixed !important;
+    background-size: auto !important;
 }
 
 .standard-title-div {
