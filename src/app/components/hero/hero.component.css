@@ -1,6 +1,6 @@
 .hero-img {
     min-height: calc(100vh - 56px);
-    max-width: 100%;
+    width: 100%;
     background: center -100px fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,13 +8,8 @@
     padding-top: 56px;
 }
 
-.lt-md-size {
+.lt-xl-size {
     background-position: center center !important;
-    min-height: calc(100vh - 56px);
-}
-
-.gt-sm-szie {
-    background: center -100px !important;
 }
 
 .hero-title-div {

@@ -21,13 +21,8 @@ h1 {
     width: 100%;
     background: center -100px fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     overflow: hidden;
-}
-
-.lt-md-size {
-    background-position: center center fixed !important;
-    background-size: auto !important;
 }
 
 .standard-title-div {
