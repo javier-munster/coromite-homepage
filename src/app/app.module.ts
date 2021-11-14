@@ -25,7 +25,6 @@ import { HomePageComponent } from "./pages/home-page/home-page.component";
 import { ContactInlineComponent } from "./components/contact-inline/contact-inline.component";
 import { MembersComponent } from "./components/members/members.component";
 import { AboutUsComponent } from "./components/about-us/about-us.component";
-import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
     declarations: [
@@ -57,8 +56,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
         MatInputModule,
         HttpClientModule,
         BrowserAnimationsModule,
-        MatProgressSpinnerModule,
-        ScullyLibModule
+        MatProgressSpinnerModule
     ],
     providers: [],
     bootstrap: [AppComponent]
