@@ -4,10 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build",
+    "ssg-build": "npx scully",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "scully": "npx scully --",
+    "scully:serve": "npx scully serve --"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +25,9 @@
     "@angular/platform-browser": "~12.1.0",
     "@angular/platform-browser-dynamic": "~12.1.0",
     "@angular/router": "~12.1.0",
+    "@scullyio/init": "^2.0.1",
+    "@scullyio/ng-lib": "^2.0.0",
+    "@scullyio/scully": "^2.0.0",
     "ngx-google-analytics": "^11.2.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",

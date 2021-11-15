@@ -21,7 +21,7 @@ h1 {
     width: 100%;
     background: center -100px fixed;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     overflow: hidden;
 }
 
