@@ -1,8 +1,8 @@
-import { ScullyConfig } from '@scullyio/scully';
+import { ScullyConfig } from "@scullyio/scully";
 export const config: ScullyConfig = {
-  projectRoot: "./src",
-  projectName: "coromite-homepage",
-  outDir: './dist/static',
-  routes: {
-  }
+    projectRoot: "./src",
+    projectName: "coromite-homepage",
+    outDir: "./dist/static",
+    routes: {
+    }
 };
